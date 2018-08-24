@@ -1,0 +1,10 @@
+s = [100, 200, 315]
+total = 0
+for item in s:
+    total+=item
+print(total)
+
+import numpy as np
+
+total = np.sum(s)
+print(total)
