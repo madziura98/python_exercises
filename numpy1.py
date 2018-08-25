@@ -1,3 +1,19 @@
+
+name = "Magdalena Maria Ponikowska"
+surname1 = name.split(" ")[0]
+print(surname1)
+sentence = "{} bought 4 kilos apples. {} likes apples."
+sentence.format(surname, name)
+
+#if we want one optional argument)
+def add_numbers(x,y,z=None):
+    if (z==None):
+        return x+y
+    else:
+        return x+y+z
+print(add_numbers(1, 2))
+print(add_numbers(1, 2, 3))
+
 import numpy as np
 mylist = [1, 2, 3]
 x = np.array(mylist)
