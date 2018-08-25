@@ -1,3 +1,31 @@
+#importing data (csv files)
+import pandas as pd
+csv_path = 'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/labs/top_selling_albums.csv'
+df = pd.read_csv(csv_path)
+df.head()
+
+import pandas as pd
+excel_path = 'https://ibm.box.com/shared/static/mzd4exo31la6m7neva2w45dstxfg5s86.xlsx'
+df = pd.read_excel(excel_path)
+df.head()
+
+
+x = df[['Length']] # resulf is as follows:
+Length
+0  00:42:19
+1  00:42:11
+2  00:42:49
+3  00:57:44
+4  00:46:33
+5  00:43:08
+6  01:15:54
+7  00:40:01
+
+df.iloc[0,2] # access 1st row and 3 column
+df.loc[0,'Artist']
+ 
+ 
+
 s = [100, 200, 315]
 total = 0
 for item in s:
@@ -8,3 +36,12 @@ import numpy as np
 
 total = np.sum(s)
 print(total)
+
+import numpy as np
+import matplotlib.pyplot as plt
+a=[[11,12,13],[21,22,23],[31,32,33]]
+A=np.array(a)
+array([[11, 12, 13],
+       [21, 22, 23],
+       [31, 32, 33]])
+
