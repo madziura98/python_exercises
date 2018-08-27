@@ -97,3 +97,31 @@ np.abs() #zwraca wartość bezwzględną liczby
 x = np.arange(1,6)
 np.add.reduce(x) #output 15
 np.add.accumulate()
+
+Function Name NaN-safe Version Description
+np.sum np.nansum #Compute sum of elements
+np.prod np.nanprod #Compute product of elements
+np.mean np.nanmean #Compute median of elements
+np.std np.nanstd #Compute standard deviation
+np.var np.nanvar #Compute variance
+np.min np.nanmin #Find minimum value
+np.max np.nanmax #Find maximum value
+np.argmin np.nanargmin #Find index of minimum value
+np.argmax np.nanargmax #Find index of maximum value
+np.median np.nanmedian #Compute median of elements
+np.percentile np.nanpercentile #Compute rank-based statistics of elements
+np.any N/A #Evaluate whether any elements are true
+np.all N/A #Evaluate whether all elements are true
+
+A = np.array([2, 0, 1, 8]) #increase a dimension
+A.shape() => (4, )
+A[np.newaxis, :] => array([2, 0, 1, 8])
+A[:, np.newaxis] => 
+array([[2]
+       [0]
+       [1]
+       [8]])
+
+  
+https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html
+https://www.analyticsvidhya.com/blog/2018/05/24-ultimate-data-science-projects-to-boost-your-knowledge-and-skills/
